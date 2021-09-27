@@ -40,7 +40,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
-    background-image: url(rc_images/causes_92888px_1024x6931.jpg);
+    background-image: url('/static/causes_92888px_1024x6931.jpg');
     background-position: top left;
     background-size: cover;
 }
@@ -170,6 +170,7 @@ body {
 }
 
 #button_6272362e {
+    line-height: 250%;
     vertical-align: bottom;
     border-radius: 15px;
     position: relative;
