@@ -1,0 +1,93 @@
+a { color:#5D5D9E; } 
+a:visited { color:#5D5D9E; } 
+a:active { color:#5C615E; } 
+a:hover { color:#B2B3B4; } 
+body 
+{ 
+background-color:#FFFFFF;
+padding:0;  
+margin: 0; 
+}
+.textstyle1 { text-align:left; }
+#container_e4bf9ac { 
+    vertical-align: top; 
+    position:relative; 
+    display: inline-block; 
+    width:100%;
+    min-height:730px; 
+    background-color:#FFFFFF; 
+    background-image: url(/static/causes_92888px_1024x693.jpg);
+    background-position:center center; background-size:cover;  
+    }
+#container_e4bf9ac_padding { margin: 10px; display: block;  }
+#container_78bff89b { 
+    vertical-align: top;
+    position:relative; 
+    display: inline-block; 
+    width:100%; min-height:704px;
+    background:none; 
+     }
+#container_78bff89b_padding { 
+    margin: 10px; 
+    display: block;  }
+#container_1fd37729 { 
+    vertical-align: top; 
+    position:relative; 
+    display: inline-block; 
+    width:87%; 
+    min-height:663px; 
+    background:none;  
+    }
+#container_1fd37729_padding { 
+    margin: 10px; 
+    display: block;  }
+#text_2c509ff5 { 
+    position:absolute; 
+    left:1%; 
+    top:48%; 
+    width:497px; 
+    height:185px; 
+    background:none;  
+    }
+.textstyle2 { 
+    font-size:44pt; 
+    font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; 
+    color:#FFFFFF;  
+    }
+#form_73017a78 { 
+    position:absolute; 
+    left:3%; 
+    top:79%; 
+    width:49%; 
+    min-height:129px; 
+    background:none;  
+    }
+#form_73017a78_padding { 
+    margin: 10px; 
+    display: block;  
+    }
+#button_8250a81 { 
+    border-radius: 15px; 
+    position:absolute; 
+    left:13%; 
+    top:5%; 
+    width:190px; 
+    height:46px; 
+    background-color:#FFFFFF; 
+    background: linear-gradient(to right, #FFFFFF, #FFFFFF); 
+    font-size:12pt; font-family:'Open Sans'; 
+    color:#000080; font-weight:bold;  
+    }
+#text_7d1752af { 
+    vertical-align: bottom; 
+    position:relative; 
+    display: inline-block; 
+    width:98%; 
+    height:26%; 
+    background:none;  
+    }
+.textstyle3 { 
+    font-size:54pt; 
+    font-family:'Open Sans'; 
+    color:#E0DFE0;  
+    }
