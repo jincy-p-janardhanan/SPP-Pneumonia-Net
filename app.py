@@ -2,8 +2,9 @@ import os
 from flask import Flask,flash,redirect,url_for,render_template,request
 from werkzeug.utils import secure_filename
 import secrets
+from ml_model import get_prediction
 
-UPLOAD_FOLDER = './static/uploads/'
+UPLOAD_FOLDER = './tmp/'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 secret = secrets.token_urlsafe(32)
@@ -21,8 +22,10 @@ def index():
     if request.method == 'POST':
         file = request.files['inputfile']
         if file and allowed_file(file.filename):
-            file.save(app.config['UPLOAD_FOLDER']+ secure_filename(file.filename))
-            flash('Your results: ')
+            tmp_path = app.config['UPLOAD_FOLDER']+ 'tmp.'+ file.filename.rsplit('.', 1)[1]
+            file.save(tmp_path)
+            label, result = get_prediction(tmp_path)
+            flash('Your results: ' + label + '\nConfidence: '+ str(result))
         else:
             flash('Unsupported file type!\nPlease upload file in .jpg, .jpeg, or .png formats only.')
     return render_template('index.html')
