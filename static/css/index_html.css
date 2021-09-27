@@ -211,6 +211,7 @@ body {
 }
 
 .textstyle7 {
+    white-space: pre;
     font-size: 13pt;
     font-family: Verdana, Geneva, sans-serif;
     color: #F99700;

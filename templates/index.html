@@ -90,7 +90,13 @@
                         <div class="textstyle2">
                           <div id="text_3148d828">
                             <div class="textstyle2">
-                              <span class="textstyle7">Your result:</span>
+                              {% with messages = get_flashed_messages() %}
+                                {% if messages %}
+                                  {% for message in messages %}
+                                    <span class="textstyle7">{{message}}</span>
+                                  {% endfor %}
+                                {% endif %}
+                              {% endwith %}
                             </div>
                           </div>
                         </div>
