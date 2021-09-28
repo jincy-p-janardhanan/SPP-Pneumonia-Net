@@ -1,2 +1,2 @@
 # SPP-Pneumonia-Net
-A spatial pyramid pooling based CNN to classify different types of pneumonia
+All academic records done during this project are placed on this branch.
