@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 import secrets
 from ml_model import get_prediction
 
-UPLOAD_FOLDER = './tmp/'
+UPLOAD_FOLDER = '.'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 secret = secrets.token_urlsafe(32)
