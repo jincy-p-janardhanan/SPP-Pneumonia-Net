@@ -3,6 +3,7 @@ import tensorflow as tf
 import cv2
 import numpy as np
 
+# To deploy using keras saved model, requires more compute resources
 # model = keras.models.load_model('saved_model_11')
 
 # Deploying using tflite
