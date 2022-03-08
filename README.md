@@ -7,7 +7,7 @@ This project aims at classifying frontal chest X-Ray images into three classes -
 Academic main projects were required to be based off of recent research publications, and this project is based on [A lightweight deep learning model for COVID-19 detection](https://ieeexplore.ieee.org/document/9188133).
 
 ## Dataset
-To build our dataset, we combined data from the following public datasets from Kaggle-
+To build our dataset, we combined data from the following public datasets from Kaggle.
 1. [COVID-19 Radiography Database](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database)
 2. [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
@@ -31,6 +31,8 @@ The model has 14 CNN layers with the following organization:
 - 4 squeeze (bottleneck) modules with filter sizes, `N = {61, 123, 199, 288}`
 
 Hyperband optimization using Keras tuner was used to select filter sizes.
+
+All the CNN layers used 'same' padding. Between each CNN layer, batchnormalization and leaky ReLU activation (with α = 0.1) was used.
 
 The CNN layers are followed by a spatial pyramid pooling (SPP) module that uses 3 different kernel sizes: `4 x 4`, `3 x 3`, and `2 x 2`. Thus this layer captures information obtained from the CNN layers in three different dimensions, and hence can facilitate better predictions. The flattened output of the SPP layer is used for prediction, using a 3-unit dense layer with softmax activation.
 
@@ -79,3 +81,9 @@ The trained model has a classification accuracy of 92.69%, uses only 3.18 MB of 
 # Development Environments
 - Google Colaboratory
 - Visual Studio
+
+# Languages and Frameworks
+- Python
+- Keras (for deep learning)
+- Flask (for deployment API)
+- HTML and CSS (for web front-end)
