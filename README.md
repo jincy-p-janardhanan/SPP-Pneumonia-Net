@@ -1,6 +1,6 @@
 # SPP-Pneumonia-Net
 
-**Disclaimer: This is a project developed to meet academic curriculum requirements (semesters 7, 8 - main project, B.Tech Information Technology (2017-2021), University of Calicut).**
+**Disclaimer: This project was developed to meet academic curriculum requirements (semesters 7, 8 - main project, B.Tech Information Technology (2017-2021), University of Calicut).**
 
 This project aims at classifying frontal chest X-Ray images into three classes - Bacterial Pneumonia, Viral Pneumonia, and Normal. 
 
