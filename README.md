@@ -17,7 +17,7 @@ For fast performance, the entire dataset was written into an h5 file. (Although 
 (Refer notebook: [Dataset.ipynb](https://github.com/jincy-p-janardhanan/SPP-Pneumonia-Net/blob/main/Dataset.ipynb))
 
 ### Data Labelling
-Chest X-Ray images were labelled and categorized follows:
+Chest X-Ray images were labelled and categorized as follows:
 - `O` : Normal
 - `1` : Bacterial Pneumonia
 - `2` : Viral Pneumonia
@@ -64,7 +64,7 @@ The following table summarizes the model architecture.
 (Refer notebook: [SPP_Pneumonia_Net.ipynb](https://github.com/jincy-p-janardhanan/SPP-Pneumonia-Net/blob/main/SPP_Pneumonia_Net.ipynb))
 
 # Optimization
-Adagrad optimizer was used to train the model using categorical cross entropy loss function. Again, hyperband optimization was used to choose the following parameters for the optimizer.
+Adagrad optimizer was used to train the model using categorical cross entropy loss function. Again, hyperband optimization was used to choose the following parameters for the optimizer:
  - Learning rate
  - Initial accumulator value
  - Epsilon
