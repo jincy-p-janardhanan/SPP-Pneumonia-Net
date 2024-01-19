@@ -76,14 +76,14 @@ The trained model has a classification accuracy of 92.69%, uses only 3.18 MB of 
 
 # Deployment
 - The trained model was converted into TFLite format and deployed using a minimal flask API.
-- The deployment is available at https://spp-pneumonia-net.herokuapp.com/ .
+- The deployment is available at https://spp-pneumonia-net.onrender.com/ .
 
 # Development Environments
 - Google Colaboratory
 - Visual Studio
 
 # Languages and Frameworks
-- Python
+- Python 3.9
 - Keras (for deep learning)
 - Flask (for deployment API)
 - HTML and CSS (for web front-end)
